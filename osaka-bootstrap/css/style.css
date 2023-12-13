@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    --mainColor:#ff206e;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image:url('../img/light_dot.jpg');
+   height: 3900px;
+}
+.navbar-brand{
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+   color: white;
+   font-size: 0.875rem;
+}
+
+.navbar-nav .nav-item a.active{
+    color: var(--mainColor);
+}
+.header{
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center ;
+}
+.header-title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.header .view{
+    color: var(--mainColor);
+    text-decoration:none;
+    font-weight: 300;
+    
+}
+.header-icons a{
+    color: white;
+}
+.header-icons{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+.text-effect{
+    opacity: 0;
+    animation:text-opacity 2s ;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.text-effect:after{
+    content: '';
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    animation: block 2s;
+}
+
+@keyframes text-opacity{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes block{
+    0%{
+        left: 0;
+        width: 0%;
+    }
+    75%{
+        left: 0;
+        width: 100%;
+    }
+    100%{
+        left: 100%;
+        width: 0%;
+    }
+}
+.navbar-toggler span{
+    color: white;
+    display: flex;
+    background-color: transparent;
+    border: 2px solid white;
+    margin: 0.25rem auto;
+}
+.navbar-toggler span:nth-child(1){
+    width: 25px;
+}
+.navbar-toggler span:nth-child(2){
+    width: 25px;
+}
+.navbar-toggler span:nth-child(3){
+    width: 10px;
+}
+.about{
+    padding-top: 6rem;
+    margin-bottom: 5rem;
+}
+.title h2{
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #b7b4b4;
+}
+.title h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.about h4{
+    font-weight: 600;
+}
+.about h5{
+    color:var(--mainColor) ;
+    font-weight: 600;
+    font-size: 1rem;   
+}
+.about .about-content :last-child{
+    margin-top: 5rem;
+}
+.services{
+    padding-top: 6rem;
+    background-image: url('../img/dark_dot.jpg');
+}
+.services .title h2{
+    color: #222;
+        
+}
+.services .title h3{
+    color: #fff;
+    
+}
+.services-box{
+    position: relative;
+}
+.services-box i{
+    color: white;
+    background-color: black;
+    padding: 17px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    
+}
+.portfolio{
+    padding-top: 6rem;
+}
+
+element.style {
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+   color: var(--mainColor); 
+}
+.TESTIMONIALS{
+    padding-top:6rem ;
+}
+.TESTIMONIALS img{
+    width: 90px;
+    
+}
+.carousel-indicators [data-bs-target] {
+    background-color: var(--mainColor);
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+.carousel-indicators{
+    bottom: -50px;
+}
+.color-box{
+    position: fixed;
+    top: 300px;
+    left: 0px;
+    z-index: 1000;
+    display: flex;
+}
+.color-options{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid grey;
+}
+.color-options li{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-color: blue;
+}
+.color-options .h2color{
+    color: white;
+}
+.color-box i{
+    color: #ff206e;
+    padding: 10px;
+    height: fit-content;
+    border-radius: 25px;
+}
+@media  (max-width:991px){
+    .navbar{
+        background-color: black;
+    }
+}
